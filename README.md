@@ -39,38 +39,39 @@ An evaluation of defensive performance on passing plays during the 2018 NFL seas
 
 
 ### notebooks
+Many of the notebooks require input files created by other notebooks, so running the notebooks in the following order will ensure the proper results.
 
-#### coverage
+#### 1 - teams
 
-- Defensive_Coverage.ipynb
-- Defensive_Coverage_1.ipynb
+- Defensive_Team_Rankings.ipynb - outputs team_rankings.xlsx
 
-#### matchups
+#### 2 - players
 
-- Defensive_Matchups.ipynb
+- Defensive_Player_Rankings.ipynb - outputs full_play.csv
+- Defensive_Player_Rankings1.ipynb - uses full_play.csv to output player_rankings.xlsx and player_rankings.csv
 
-#### players
+#### 3 - coverage
 
-- Defensive_Player_Rankings.ipynb
-- Defensive_Player_Rankings1.ipynb
+- Defensive_Coverage.ipynb - uses full_play.csv to output full_play_2.csv
+- Defensive_Coverage_1.ipynb - uses full_play_2.csv to output full_play_3.csv
+
+#### 4 - proximity
+
+- Defensive_Proximity.ipynb - uses full_play_2.csv to output distance.csv
+- Defensive_Proximity1.ipynb - uses full_play_2.csv to output distance_2.csv
+- Defensive_Proimity_2.ipynb - uses distance_2.csv and player_rankings.csv to output coverage_speed.xlsx
 
 #### plays
 
-- Defensive_Play_Rankings.ipynb
-
-#### proximity
-
-- Defensive_Proximity.ipynb
-- Defensive_Proximity1.ipynb
-- Defensive_Proimity_2.ipynb
+- Defensive_Play_Rankings.ipynb - uses full_play_3.csv to output the 12 play_rankings spreadsheets.
 
 #### routes
 
-- Defensive_Route.ipynb
+- Defensive_Route.ipynb - uses full_play_3.csv to output routes.xlsx
 
-#### teams
+#### matchups
 
-- Defensive_Team_Rankings.ipynb
+- Defensive_Matchups.ipynb - uses full_play_3.csv to output matchup1.xlsx and matchup2.xlsx
 
 ### main
 
