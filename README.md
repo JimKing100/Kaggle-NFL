@@ -56,7 +56,7 @@ Many of the notebooks require input files created by other notebooks, so running
 - Defensive_Proximity.ipynb - uses full_play_2.csv to output distance.csv
 - Defensive_Proximity1.ipynb - uses full_play_2.csv to output distance_2.csv
 - Defensive_Proximity_2.ipynb - uses distance_2.csv and player_rankings.csv to output coverage_speed.xlsx
-- Defensive_Coverage_1.ipynb - uses full_play_2.csv to output full_play_3.csv
+- Defensive_Coverage_1.ipynb - uses full_play_2.csv and distance_2.csv to output full_play_3.csv
 
 #### 4 - plays
 
